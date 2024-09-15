@@ -1,5 +1,8 @@
+
 # ECE444 Lab 1
+
 > Name: Sarah John
+
 > This repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io 
 
 # Personal Portfolio ⚡️ 
