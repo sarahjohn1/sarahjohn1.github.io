@@ -9,7 +9,10 @@
 
 ![Activity 1 Screenshot!](assets/img/screenshots/activity1.png)
 
+### Activity 2
 
+![Activity 1 Screenshot!](assets/img/screenshots/activity2.png)
+![Activity 1 Screenshot!](assets/img/screenshots/a2p2.png)
 
 # Personal Portfolio ⚡️ 
 > A clean, beautiful, responsive portfolio template for Software Developers!
