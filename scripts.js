@@ -8,6 +8,7 @@ let projects = [
       "Worked in a team of 3 to build a largescale interactive mapping software (similar to Google Maps) using Agile project management practices.",
       "Used OpenStreetMap API, C++, and GTK graphics library to build a user friendly map.",
     ],
+    date: new Date('2022')
   },
   {
     name: "Personal Web Site",
@@ -19,6 +20,7 @@ let projects = [
       "A simple and easy to use website highlighting my education, acheivements, and extracurriculars.",
       "Built from scratch using Angular framework and skills in HTML, CSS, and TypeScript",
     ],
+    date: new Date('2023')
   },
   {
     name: "Capstone Project",
@@ -30,6 +32,7 @@ let projects = [
       "A simple and easy to use website for project managers",
       "Implements a Deep Reinforcement Algorithm.",
     ],
+    date: new Date('2024')
   },
 ];
 
@@ -90,4 +93,14 @@ function showNext () {
 
 }
 
-displayProj();
+function sortArray() 
+{
+  projects.sort((a, b) => b.date.getTime() - a.date.getTime());
+}
+
+function projectsController () {
+  sortArray();
+  displayProj();
+}
+
+projectsController();
