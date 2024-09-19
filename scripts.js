@@ -101,6 +101,7 @@ function sortArray()
 function projectsController () {
   sortArray();
   displayProj();
+  console.log(projects);
 }
 
 projectsController();
