@@ -38,12 +38,9 @@ function generateprojectHTML(project) {
   let name = project.name;
   let shortDescription = project.shortDescription;
   let img = project.img;
-  let detailsList = document.createElement("ul");
-  project.details.forEach((item) => {
-    let li = document.createElement("li");
-    li.innerText = item;
-    detailsList.append(li);
-  });
+  let ul = `<ul>${project.details.map(data =>
+    `<li>${data}</li>`).join('')}
+          </ul>`;
 
   return `
   <div class="col s12 m6 l4">
@@ -61,7 +58,7 @@ function generateprojectHTML(project) {
       <div class="card-reveal">
         <span class="card-title grey-text"><small>Accomplishments</small><i
         class="mdi-navigation-close right"></i></span>
-        <ul id="detailsList">
+        <ul>${ul}</ul>
       </div>
     </div>
   </div>
